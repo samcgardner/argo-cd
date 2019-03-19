@@ -117,7 +117,7 @@ COPY --from=builder /usr/local/bin/aws-iam-authenticator /usr/local/bin/aws-iam-
 # workaround ksonnet issue https://github.com/ksonnet/ksonnet/issues/298
 ENV USER=argocd
 
-USER argocd
+USER 999
 WORKDIR /home/argocd
 
 
